@@ -1,0 +1,33 @@
+{
+  "name": "graphqlapibabel",
+  "version": "1.0.0",
+  "description": "A simple api with Graphql and babel",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --source-maps",
+    "start": "nodemon src/index.js --exec babel-node",
+    "dev": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lKyoto/GraphqlApiBabel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lKyoto/GraphqlApiBabel/issues"
+  },
+  "homepage": "https://github.com/lKyoto/GraphqlApiBabel#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "nodemon": "^2.0.3"
+  }
+}
